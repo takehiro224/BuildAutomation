@@ -10,14 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let env = ProcessInfo.processInfo.environment
+        var stringURL = "http://www.shinwart.co.jp/"
+        #if DEBUG
+            if let url = env["debug"] {
+                stringURL = url
+            }
+        #elseif DEVELOP
+            if let url = env["develop"] {
+                stringURL = url
+            }
+        #endif
+        guard let requestURL = URL(string: stringURL) else { return }
+        let req = URLRequest(url: requestURL)
+        webView.loadRequest(req)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
