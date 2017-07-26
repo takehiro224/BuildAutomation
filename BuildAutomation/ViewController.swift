@@ -22,10 +22,12 @@ class ViewController: UIViewController {
             if let str = env["debug"] {
                 label.text = str
             }
+            label.text = "debug"
         #elseif DEVELOP
             if let str = env["develop"] {
                 label.text = str
             }
+            label.text = "develop"
         #else
             print("Release")
         #endif
