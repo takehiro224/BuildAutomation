@@ -64,7 +64,7 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "develop"
-            value = "https://yahoo.co.jp"
+            value = "DEV"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
