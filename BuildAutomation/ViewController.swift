@@ -25,6 +25,8 @@ class ViewController: UIViewController {
             if let url = env["develop"] {
                 stringURL = url
             }
+        #else
+            print("Release")
         #endif
         guard let requestURL = URL(string: stringURL) else { return }
         let req = URLRequest(url: requestURL)
