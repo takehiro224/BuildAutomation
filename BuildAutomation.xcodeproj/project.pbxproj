@@ -146,8 +146,8 @@
 				TargetAttributes = {
 					F9369A621F2713D000AC5F1A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 38HYQS5SV4;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = YD3LU335TP;
+						ProvisioningStyle = Manual;
 					};
 					F9369A761F2713D000AC5F1A = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -341,11 +341,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 38HYQS5SV4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YD3LU335TP;
 				INFOPLIST_FILE = BuildAutomation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shinwart.BuildAutomation;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shinwart.BuildAutomations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1475ef57-2f0d-48d5-85ae-af9504404779";
+				PROVISIONING_PROFILE_SPECIFIER = "automation sample";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -354,11 +357,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 38HYQS5SV4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YD3LU335TP;
 				INFOPLIST_FILE = BuildAutomation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shinwart.BuildAutomation;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shinwart.BuildAutomations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1475ef57-2f0d-48d5-85ae-af9504404779";
+				PROVISIONING_PROFILE_SPECIFIER = "automation sample";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -447,11 +453,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 38HYQS5SV4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YD3LU335TP;
 				INFOPLIST_FILE = BuildAutomation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shinwart.BuildAutomation;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shinwart.BuildAutomations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1475ef57-2f0d-48d5-85ae-af9504404779";
+				PROVISIONING_PROFILE_SPECIFIER = "automation sample";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEVELOP;
 				SWIFT_VERSION = 3.0;
 			};
@@ -493,6 +502,7 @@
 				F9369A821F2713D000AC5F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9369A831F2713D000AC5F1A /* Build configuration list for PBXNativeTarget "BuildAutomationTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +512,7 @@
 				F9369A851F2713D000AC5F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
