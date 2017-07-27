@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        label.text = "default"
+        label.text = "test"
 
         let env = ProcessInfo.processInfo.environment
         #if DEBUG
